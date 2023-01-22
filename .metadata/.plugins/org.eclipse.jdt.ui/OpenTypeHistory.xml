@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=unit-testing/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;com.in28minutes.unittesting.business{ListMockTest.java[ListMockTest" modifiers="1" timestamp="1662967326797"/>
+    <typeInfo handle="=unit-testing/C:\/Users\/DJ\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.7.2\/spring-data-jpa-2.7.2.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.7.2=/=/maven.scope=/compile=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1658549689224"/>
+    <typeInfo handle="=unit-testing/C:\/Users\/DJ\/.m2\/repository\/org\/hamcrest\/hamcrest\/2.2\/hamcrest-2.2.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/test=/true=/=/maven.groupId=/org.hamcrest=/=/maven.artifactId=/hamcrest=/=/maven.version=/2.2=/=/maven.scope=/test=/&lt;org.hamcrest(Matchers.class[Matchers" modifiers="33" timestamp="1653302956939"/>
+    <typeInfo handle="=unit-testing/C:\/Users\/DJ\/.m2\/repository\/org\/hamcrest\/hamcrest\/2.2\/hamcrest-2.2.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/test=/true=/=/maven.groupId=/org.hamcrest=/=/maven.artifactId=/hamcrest=/=/maven.version=/2.2=/=/maven.scope=/test=/&lt;org.hamcrest(MatcherAssert.class[MatcherAssert" modifiers="33" timestamp="1653302956939"/>
+</typeInfoHistroy>

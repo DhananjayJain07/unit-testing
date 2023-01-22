@@ -1,0 +1,31 @@
+package com.in28minutes.unittesting;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.in28minutes.unittesting.business.SomeBusinessImpl;
+
+@SpringBootTest
+class UnitTestingApplicationTests {
+
+	@Test
+	public void calculateSum_basic() {
+		SomeBusinessImpl someBusinessImpl = new SomeBusinessImpl();
+		int sum = someBusinessImpl.calculateSum(new int[] {1,2,3});
+		System.out.println("Run");
+		int expectedResult = 6;
+		assertEquals(expectedResult, sum);
+	}
+	
+	@Test
+	public void calculateSum_emptyArray() {
+		SomeBusinessImpl someBusinessImpl = new SomeBusinessImpl();
+		int sum = someBusinessImpl.calculateSum(new int[] { });
+		System.out.println("Run");
+		int expectedResult = 0;
+		assertEquals(expectedResult, sum);
+	}
+
+}

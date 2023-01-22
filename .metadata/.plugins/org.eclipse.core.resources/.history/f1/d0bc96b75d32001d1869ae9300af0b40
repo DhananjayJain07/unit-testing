@@ -1,0 +1,17 @@
+package com.in28minutes.unittesting.business;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SomeBusinessTest {
+
+	@Test
+	public void calculateSum_basic() {
+		SomeBusinessImpl someBusinessImpl = new SomeBusinessImpl();
+		int sum = someBusinessImpl.calculateSum(new int[] {1,2,3});
+		int expectedResult = 8;
+		assertEquals(expectedResult, sum);
+	}
+
+}

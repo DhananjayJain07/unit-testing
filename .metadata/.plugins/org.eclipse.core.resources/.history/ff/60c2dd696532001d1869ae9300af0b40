@@ -1,0 +1,48 @@
+package com.in28minutes.unittesting.business;
+
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.internal.runners.JUnit4ClassRunner;
+import org.junit.runner.RunWith;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.in28minutes.unittesting.data.SomeDataService;
+
+
+public class SomeBusinessMockTest {
+
+	SomeBusinessImpl someBusinessImpl = new SomeBusinessImpl();
+	SomeDataService someDataServiceMock = mock(SomeDataService.class);
+	
+	@Before
+	public void before() {
+		someBusinessImpl.setSomeDataService(someDataServiceMock);
+	}
+	
+	@Test
+	public void calculateSumUsingDataService_basic() {
+		
+		when(someDataServiceMock.retrieveAllData()).thenReturn(new int[] {1,2,3});
+		
+		
+		int actualResult = someBusinessImpl.calculateUsingDataService();
+		assertEquals(6, actualResult);
+	}
+	
+	@Test
+	public void calculateSum_emptyArray() {
+		
+		when(someDataServiceMock.retrieveAllData()).thenReturn(new int[] {});
+		
+		int actualResult = someBusinessImpl.calculateUsingDataService();
+		int expectedResult = 0;
+		assertEquals(expectedResult, actualResult);
+	}
+
+}

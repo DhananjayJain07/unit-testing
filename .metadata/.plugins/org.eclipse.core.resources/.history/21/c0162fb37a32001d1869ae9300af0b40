@@ -1,0 +1,5 @@
+package com.in28minutes.unittesting.spike;
+
+public class JSONAssertTest {
+
+}

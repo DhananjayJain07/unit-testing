@@ -1,0 +1,11 @@
+package com.in28minutes.unittesting.spike;
+
+import org.junit.Test;
+
+public class JSONAssertTest {
+
+	@Test
+	public void jsonAssert() {
+		
+	}
+}
